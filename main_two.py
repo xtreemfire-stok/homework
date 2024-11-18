@@ -12,9 +12,18 @@
 
 """Задача №2"""
 
-a, b = map(int, input().split())
-res = []
-for i in range(a + b):
-    if i == (a * i - b)** 0.5:
-        res.append(i)
-print(*res if len(res) == 2 else res + res)        
+# a, b = map(int, input().split())
+# res = []
+# for i in range(a + b):
+#     if i == (a * i - b)** 0.5:
+#         res.append(i)
+# print(*res if len(res) == 2 else res + res)
+
+"""Здача #3"""
+
+n = int(input())
+k = 0
+while 2**k <= n:
+    print(2**k, end=" ")
+    k += 1
+print()
