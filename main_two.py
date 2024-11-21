@@ -1,4 +1,4 @@
-"""Домашнее задание по третьему семинару"""
+"""Домашнее задание по второму семинару"""
 
 """Задача №1"""
 
@@ -21,9 +21,23 @@
 
 """Здача #3"""
 
+# n = int(input())
+# k = 0
+# while 2**k <= n:
+#     print(2**k, end=" ")
+#     k += 1
+# print()
+
+
+"""Домашнее задание по третьему семинару"""
+
+"""Задача #1"""
+
+import random
 n = int(input())
-k = 0
-while 2**k <= n:
-    print(2**k, end=" ")
-    k += 1
-print()
+x = int(input())
+n_array = [1, 2, 3, 4, 5]
+for i in range(n):
+    n_array.append(random.randint(0, n//2))
+print(f' count {n_array.count(x)}')
+
