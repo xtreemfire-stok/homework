@@ -63,28 +63,41 @@
 
 """Здача #3"""
 
-dict_with_letter = {1: ("А","Е","В","И","Н","О","Р","С","Т", 
- 'A','E','I','O','U','L','N','S','T','R'), 
- 2: ("Д","К","Л","М","П","У", 
- 'D', 'G'), 
- 3: ("Б","Г","Ё","Ь","Я", 
- 'B','C','M', 'P'), 
- 4: ("Й","Ы", 
- 'F', 'H', 'V', 'W', 'Y'), 
- 5: ("Ж","З","Х","Ц","Ч", 
- 'K'), 
- 6: ("Ш", "Э","Ю", 
- 'J','X'), 
- 7: ("Ф","Щ","Ъ", 
- 'Q','Z') 
- } 
+# dict_with_letter = {1: ("А","Е","В","И","Н","О","Р","С","Т", 
+#  'A','E','I','O','U','L','N','S','T','R'), 
+#  2: ("Д","К","Л","М","П","У", 
+#  'D', 'G'), 
+#  3: ("Б","Г","Ё","Ь","Я", 
+#  'B','C','M', 'P'), 
+#  4: ("Й","Ы", 
+#  'F', 'H', 'V', 'W', 'Y'), 
+#  5: ("Ж","З","Х","Ц","Ч", 
+#  'K'), 
+#  6: ("Ш", "Э","Ю", 
+#  'J','X'), 
+#  7: ("Ф","Щ","Ъ", 
+#  'Q','Z') 
+#  } 
  
-def dicting(dict_with, words): 
- sum_points = 0 
- for key, value in dict_with.items(): 
-  for letter in words.upper(): 
-   if letter in value: 
-    sum_points += key 
- print(sum_points) 
-word = str(input()) 
-dicting(dict_with_letter,word)
+# def dicting(dict_with, words): 
+#  sum_points = 0 
+#  for key, value in dict_with.items(): 
+#   for letter in words.upper(): 
+#    if letter in value: 
+#     sum_points += key 
+#  print(sum_points) 
+# word = str(input()) 
+# dicting(dict_with_letter,word)
+
+
+"""Домашнее задание по четвертому семинару"""
+
+"""Задача #1"""
+
+from random import randint
+n_set = set(randint(1, 20) for i in range(int(input())))
+print(n_set)
+m_set = set(randint(1, 20) for i in range(int(input())))
+print(m_set)
+s_set = sorted(n_set.intersection(m_set))
+print(*s_set)
