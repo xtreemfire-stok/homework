@@ -94,10 +94,22 @@
 
 """Задача #1"""
 
-from random import randint
-n_set = set(randint(1, 20) for i in range(int(input())))
-print(n_set)
-m_set = set(randint(1, 20) for i in range(int(input())))
-print(m_set)
-s_set = sorted(n_set.intersection(m_set))
-print(*s_set)
+# from random import randint
+# n_set = set(randint(1, 20) for i in range(int(input())))
+# print(n_set)
+# m_set = set(randint(1, 20) for i in range(int(input())))
+# print(m_set)
+# s_set = sorted(n_set.intersection(m_set))
+# print(*s_set)
+
+
+"""Задача №2"""
+
+n = int(input())
+k = [int(x) for x in input().split()]
+n = len(k)
+k = k + k[:2]
+ma = 0
+for i in range(n):
+    ma = max(ma, k[i] + k[i+1] + k[i+2])
+print(ma)
