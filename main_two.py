@@ -105,11 +105,11 @@
 
 """Задача №2"""
 
-n = int(input())
-k = [int(x) for x in input().split()]
-n = len(k)
-k = k + k[:2]
-ma = 0
-for i in range(n):
-    ma = max(ma, k[i] + k[i+1] + k[i+2])
-print(ma)
+# n = int(input())
+# k = [int(x) for x in input().split()]
+# n = len(k)
+# k = k + k[:2]
+# ma = 0
+# for i in range(n):
+#     ma = max(ma, k[i] + k[i+1] + k[i+2])
+# print(ma)
