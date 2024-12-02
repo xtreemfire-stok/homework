@@ -113,3 +113,33 @@
 # for i in range(n):
 #     ma = max(ma, k[i] + k[i+1] + k[i+2])
 # print(ma)
+
+"""Домашнее задание по пятому семинару"""
+
+
+"""Задача #1"""
+
+# def recAB(a, b):
+#     if b == 0:
+#         return 1
+#     return a * recAB(a, b - 1)
+
+# a = int(input())
+# b = int(input())
+
+# print(recAB(a, b))
+
+
+"""Задача №2"""
+
+
+def sum(a, b):
+    if b == 0:
+        return a
+    else:
+        if b > 0:
+            return sum(a + 1, b - 1)
+        else:
+            return sum(a - 1, b + 1)
+
+print(sum(int(input()), int(input())))
