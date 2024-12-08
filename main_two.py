@@ -197,12 +197,3 @@
 # line = int(input())
 # columns = int(input())
 # print_operation_table(lambda x, y: x * y, line, columns)
-
-
-
-"""Домашнее задание по восьмому семинару"""
-
-
-"""Задача #1"""
-
-
