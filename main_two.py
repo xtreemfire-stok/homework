@@ -161,9 +161,39 @@
 """Задача №2"""
 
 
-list=[-5,9,0,3,-1,-2,1,4,-2,10,2,0,-9,8,10,-9,0,-5,-5,7]
-min_number = int(input())
-max_number = int(input())
-for i in range(len(list)):
-    if min_number <= list[i] <= max_number:
-        print(i)
+# list=[-5,9,0,3,-1,-2,1,4,-2,10,2,0,-9,8,10,-9,0,-5,-5,7]
+# min_number = int(input())
+# max_number = int(input())
+# for i in range(len(list)):
+#     if min_number <= list[i] <= max_number:
+#         print(i)
+
+
+
+"""Домашнее задание по шестому семинару"""
+
+
+"""Задача #1"""
+
+
+# def ritm(chant):
+#     st = chant.lower().split()
+#     f = lambda x: sum(1 for i in x if i in 'аеёиоуыэюя')
+#     tmp = f(st[0])
+#     if all([f(i) == tmp for i in st]):
+#         return 'Парам пам-пам'
+#     return 'Пам парам'
+ 
+# print(ritm("пара-ра-рам рам-пам-папам па-ра-па-дам"))
+
+
+"""Задача №2"""
+
+
+def print_operation_table(operation, num_rows, num_сolumns):
+    arr=[[operation(i,j) for i in range(1,num_rows+1)] for j in range(1, num_сolumns+1)]
+    for i in arr:
+        print(*[f"{x:>3}"for x in i])
+line = int(input())
+columns = int(input())
+print_operation_table(lambda x,y: x*y,line,columns)
