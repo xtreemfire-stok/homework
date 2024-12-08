@@ -145,7 +145,7 @@
 # print(sum(int(input()), int(input())))
 
 
-"""Домашнее задание по пятому семинару"""
+"""Домашнее задание по шестому семинару"""
 
 
 """Задача #1"""
@@ -170,7 +170,7 @@
 
 
 
-"""Домашнее задание по шестому семинару"""
+"""Домашнее задание по седьмому семинару"""
 
 
 """Задача #1"""
@@ -191,9 +191,9 @@
 
 
 def print_operation_table(operation, num_rows, num_сolumns):
-    arr=[[operation(i,j) for i in range(1,num_rows+1)] for j in range(1, num_сolumns+1)]
+    arr=[[operation(i,j) for i in range(1,num_rows+1)] for j in range(1, num_сolumns + 1)]
     for i in arr:
         print(*[f"{x:>3}"for x in i])
 line = int(input())
 columns = int(input())
-print_operation_table(lambda x,y: x*y,line,columns)
+print_operation_table(lambda x, y: x * y, line, columns)
