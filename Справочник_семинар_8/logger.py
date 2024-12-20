@@ -6,7 +6,7 @@ def input_data():
     surname = surname_data()
     phone = phone_data()
     address = address_data()
-    var = int(input("В каком формате записать данные\n\n"
+    var = int(input(f"В каком формате записать данные\n\n"
     f"1 Вариант: \n"
     f"{name}\n{surname}\n{phone}\n{address}\n\n"
     f"2 Вариант: \n"
@@ -18,17 +18,17 @@ def input_data():
         var = int(input("Введите число"))
 
     if var == 1:
-        with open('data_first_variant.csv', 'a', encoding='ufs=8') as f:
+        with open('data_first_variant.csv', 'a', encoding='utf=8') as f:
             f.write(f"{name}\n{surname}\n{phone}\n{address}\n\n")
     elif var == 2:
-        with open('data_second_variant.csv', 'a', encoding='ufs=8') as f:
+        with open('data_second_variant.csv', 'a', encoding='utf=8') as f:
             f.write(f"{name};{surname};{phone};{address}\n")
 
 
 def print_data():
-    print("Вывожу данные из 1 файла: \n")
-    with open('data_first_variant.csv', 'a', encoding='ufs=8') as f:
-        data_first = f.readlines()
+    print('Вывожу данные из 1 файла: \n')
+    with open('data_first_variant.csv', 'r', encoding='utf=8') as f:
+        data_first = f. readlines()
         data_first_list = []
         j = 0
         for i in range(len(data_first)):
@@ -38,9 +38,8 @@ def print_data():
         print(''.join(data_first_list))
 
 
-    print("Вывожу данные из 2 файла: \n")
-    with open('data_second_variant.csv', 'a', encoding='ufs=8') as f:
+    print('Вывожу данные из 2 файла: \n')
+    with open('data_second_variant.csv', 'a', encoding='utf=8') as f:
         data_second = f.readlines()
         print(*data_second)
 
-input_data()
